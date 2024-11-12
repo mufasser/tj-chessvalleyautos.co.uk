@@ -217,7 +217,7 @@ function mi_complete_valuation_action() {
 
         // Admin Email
         $adminEmail = 'tj@chessvalleyautos.co.uk';
-        // $adminEmail = 'mufasseri@gmail.com';
+        $adminEmail = 'mufasseri@gmail.com';
         $emailResponse =  mi_send_email($adminEmail,"$vehiclePlateNumber - Valuation", $html);
         // Customer Email 
         $emailResponse =  mi_send_email($email,"$vehiclePlateNumber - Valuation", $customerMessage);
@@ -362,7 +362,7 @@ function mi_complete_next_step_valuation_action(){
         $message .= "$firstName $lastName wants to you contact to communicate  $next_step. you can view his car valuation information by <a href=\"https://www.chessvalleyautos.co.uk/wp-admin/post.php?post=$post_id&action=edit\">CLICK HERE</a>";
         $message .= "<br>Regards<br>".get_bloginfo('name');
         // mi_send_email('mufasseri@gmail.com', $subject, $message);
-        mi_send_email('tj@chessvalleyautos.uk', $subject, $message);
+        mi_send_email('sales@chessvalleyautos.uk', $subject, $message);
     }
     die(json_encode($response));
 
@@ -389,7 +389,7 @@ function mi_send_email($to, $subject, $message, $file_path=''){
 
     // From email
     $fromName = 'Chess Valley Autos';
-    $fromEmail = 'info@chessvalleyautos.co.uk';
+    $fromEmail = 'sales@chessvalleyautos.co.uk';
 
     // Set the email message
     // $message = 'Here is the attachment you requested.';

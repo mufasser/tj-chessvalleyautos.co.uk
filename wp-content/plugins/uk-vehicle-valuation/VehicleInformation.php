@@ -11,14 +11,9 @@ define('API_KEY', "e387636a-8360-48fd-9d47-fde0e75fd40d");
 // Set BASE API URL
 define('BASE_URL', "https://uk1.ukvehicledata.co.uk/api/datapackage/");
 
-
 class VehicleInformation {
 
-  function __construct()
-  {
-    
-    
-  }
+  function __construct(){}
 
   // Battery Data Created
   // https://uk1.ukvehicledata.co.uk/api/datapackage/BatteryData?v=2&api_nullitems=1&auth_apikey=90c2f03d-481c-4f6b-96e1-561413703732&key_VRM=KM12AKK
